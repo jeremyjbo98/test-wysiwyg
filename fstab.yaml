@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://estyla.sharepoint.com/:f:/r/sites/demo-storefront-edge-delivery-services/Shared%20Documents/demo-storefront/My%20site?csf=1&web=1&e=Hbri6h"
+    url: "https://drive.google.com/drive/u/4/folders/16LgTlylfhwJG7nLop7Jz94vijWeLezhs"
     type: "markup"
     suffix: ".html"
