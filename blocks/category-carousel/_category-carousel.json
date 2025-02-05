@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Electrónica",
+      "image": "/content/dam/my-site/images/electronica.jpg"
+    },
+    {
+      "name": "Hogar",
+      "image": "/content/dam/my-site/images/hogar.jpg"
+    },
+    {
+      "name": "Moda",
+      "image": "/content/dam/my-site/images/moda.jpg"
+    }
+  ]
+  
