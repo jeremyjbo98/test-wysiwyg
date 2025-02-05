@@ -215,7 +215,9 @@
           {
             "component": "text",
             "name": "text",
-            "label": "Text"
+            "label": "Text",
+            "value": "",
+            "valueType": "string"
           }
         ]
       }
