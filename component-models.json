@@ -222,7 +222,7 @@
             "value": ""
           },
           {
-            "component": "textarea",
+            "component": "richtext",
             "name": "description",
             "label": "Descripción",
             "valueType": "string",
