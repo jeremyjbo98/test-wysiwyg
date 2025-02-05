@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #ffee00;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -52,6 +52,11 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50px;
+  width: 125px;
+  display: block;
 }
 
 /* hamburger */
