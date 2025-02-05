@@ -10,6 +10,8 @@ async function fetchCategories(block) {
 }
 
 function showCategorySlide(block, direction) {
+
+    console.log("hola mundo");
     const slidesWrapper = block.querySelector('.category-carousel-slides-container');
     const slidesList = block.querySelector('.category-carousel-slides');
     const slides = block.querySelectorAll('.category-carousel-slide');
