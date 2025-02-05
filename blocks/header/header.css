@@ -57,6 +57,7 @@ header nav a:any-link {
   border-radius: 50px;
   width: 125px;
   display: block;
+  text-align: center;
 }
 
 /* hamburger */
