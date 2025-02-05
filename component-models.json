@@ -208,12 +208,29 @@
     "id": "list",
     "fields": [
       {
-        "component": "text",
-        "name": "text",
-        "label": "Text",
-        "value": "",
-        "valueType": "string"
+        "component": "array",
+        "name": "items",
+        "label": "Lista de Ítems",
+        "valueType": "object",
+        "value": [],
+        "fields": [
+          {
+            "component": "text",
+            "name": "title",
+            "label": "Título",
+            "valueType": "string",
+            "value": ""
+          },
+          {
+            "component": "textarea",
+            "name": "description",
+            "label": "Descripción",
+            "valueType": "string",
+            "value": ""
+          }
+        ]
       }
     ]
   }
+  
 ]
