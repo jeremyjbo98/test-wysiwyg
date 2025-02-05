@@ -203,5 +203,22 @@
          "value": ""
        }
      ]
+  },
+  {
+    "id": "list",
+    "fields": [
+      {
+        "component": "multifield",
+        "name": "items",
+        "label": "Items",
+        "fields": [
+          {
+            "component": "text",
+            "name": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ]
   }
 ]
