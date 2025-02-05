@@ -1,11 +1,11 @@
 [
     {
       "name": "Electrónica",
-      "image": "/content/dam/my-site/images/electronica.jpg"
+      "image": "core/franklin/components/block/v1/block"
     },
     {
       "name": "Hogar",
-      "image": "/content/dam/my-site/images/hogar.jpg"
+      "image": "core/franklin/components/block/v1/block/item"
     },
     {
       "name": "Moda",
