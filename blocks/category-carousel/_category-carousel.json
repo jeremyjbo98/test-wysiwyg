@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Electrónica",
+      "image": "core/franklin/components/block/v1/block"
+    },
+    {
+      "name": "Hogar",
+      "image": "core/franklin/components/block/v1/block/item"
+    },
+    {
+      "name": "Moda",
+      "image": "/content/dam/my-site/images/moda.jpg"
+    }
+  ]
+  
