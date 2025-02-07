@@ -8,8 +8,7 @@
                     "page": {
                         "resourceType": "core/franklin/components/block/v1/block",
                         "template": {
-                            "name": "Carrusel-custom",
-                            "model": "carrusel-custom"
+                            "slides": "3"
                         }
                     }
                 }
@@ -33,6 +32,12 @@
     "filters": [
         {
             "id": "carrusel-custom",
+            "components": [
+                "slide"
+            ]
+        },
+        {
+            "id": "slide",
             "components": [
                 "image",
                 "title"
