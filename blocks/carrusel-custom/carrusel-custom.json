@@ -25,7 +25,8 @@
                     "valueType": "number",
                     "name": "slides",
                     "value": "",
-                    "label": "Slides"
+                    "label": "Slides",
+                    "className": "test-slide"
                 }
             ]
         }
