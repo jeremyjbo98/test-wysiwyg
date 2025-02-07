@@ -59,12 +59,5 @@
     "components": [
       "slide"
     ]
-  },
-  {
-    "id": "slide",
-    "components": [
-      "image",
-      "title"
-    ]
   }
 ]
