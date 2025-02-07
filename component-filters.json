@@ -46,6 +46,12 @@
     ]
   },
   {
+    "id":"lista",
+    "components": [
+      "text"
+    ]
+  },
+  {
     "id": "column",
     "components": [
       "text",
