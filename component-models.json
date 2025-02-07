@@ -208,6 +208,18 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "carrusel-custom",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "slides",
+        "value": "",
+        "label": "Slides"
+      }
+    ]
   }
   
   
