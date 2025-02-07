@@ -57,7 +57,8 @@
   {
     "id": "carrusel-custom",
     "components": [
-      "image"
+      "image",
+      "title"
     ]
   }
 ]
