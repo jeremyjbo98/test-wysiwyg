@@ -137,7 +137,9 @@
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "model": "lista"
+                  "name": "Lista",
+                  "model": "lista",
+                  "noticias": "Novedades"
                 }
               }
             }
