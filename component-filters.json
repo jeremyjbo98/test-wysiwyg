@@ -53,5 +53,11 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "carrusel-custom",
+    "components": [
+      "image"
+    ]
   }
 ]
