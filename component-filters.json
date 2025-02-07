@@ -48,7 +48,9 @@
   {
     "id":"lista",
     "components": [
-      "text"
+      "text",
+      "image",
+      "title"
     ]
   },
   {

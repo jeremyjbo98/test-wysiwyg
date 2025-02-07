@@ -213,21 +213,15 @@
     "id": "lista",
     "fields": [
       {
-        "component": "collection",
+        "component": "multiselect",
         "name": "items",
         "label": "Elementos de la Lista",
-        "value": [],
-        "item": {
-          "fields": [
-            {
-              "component": "text",
-              "name": "texto",
-              "label": "Texto del Elemento",
-              "value": "",
-              "valueType": "string"
-            }
-          ]
-        }
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
       }
     ]
   }
