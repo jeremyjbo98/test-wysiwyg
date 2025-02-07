@@ -34,7 +34,7 @@
         {
             "id": "carrusel-custom",
             "components": [
-                "column"
+                "slide"
             ]
         },
         {
