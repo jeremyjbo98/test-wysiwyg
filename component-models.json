@@ -217,7 +217,8 @@
         "valueType": "number",
         "name": "slides",
         "value": "",
-        "label": "Slides"
+        "label": "Slides",
+        "class": "full-width"
       }
     ]
   }
