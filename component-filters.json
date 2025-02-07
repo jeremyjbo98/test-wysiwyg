@@ -35,22 +35,13 @@
       "cards",
       "columns",
       "quote",
-      "fragment",
-      "lista-custom"
+      "fragment"
      ]
   },  
   {
     "id": "columns",
     "components": [
       "column"
-    ]
-  },
-  {
-    "id":"lista",
-    "components": [
-      "text",
-      "image",
-      "title"
     ]
   },
   {

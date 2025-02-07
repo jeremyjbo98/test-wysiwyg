@@ -208,21 +208,6 @@
         "value": ""
       }
     ]
-  },
-  {
-    "id": "lista-custom",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "items",
-        "label": "Elementos de la Lista",
-        "valueType": "string",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      }
-    ]
   }
   
   

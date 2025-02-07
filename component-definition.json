@@ -128,23 +128,7 @@
               }
             }
           }
-        },
-        {
-          "title": "Lista Custom",
-          "id": "lista-custom",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Lista",
-                  "model": "lista",
-                  "author": "Novedades"
-                }
-              }
-            }
-          }
-        },        
+        },      
         {
           "title": "Columns",
           "id": "columns",
