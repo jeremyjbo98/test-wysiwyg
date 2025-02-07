@@ -210,32 +210,27 @@
     ]
   },
   {
-    "id": "list",
+    "id": "lista",
     "fields": [
       {
-        "component": "array",
+        "component": "collection",
         "name": "items",
-        "label": "Lista de Ítems",
-        "valueType": "object",
+        "label": "Elementos de la Lista",
         "value": [],
-        "fields": [
-          {
-            "component": "text",
-            "name": "title",
-            "label": "Título",
-            "valueType": "string",
-            "value": ""
-          },
-          {
-            "component": "richtext",
-            "name": "description",
-            "label": "Descripción",
-            "valueType": "string",
-            "value": ""
-          }
-        ]
+        "item": {
+          "fields": [
+            {
+              "component": "text",
+              "name": "texto",
+              "label": "Texto del Elemento",
+              "value": "",
+              "valueType": "string"
+            }
+          ]
+        }
       }
     ]
   }
+  
   
 ]

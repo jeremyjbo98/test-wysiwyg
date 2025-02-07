@@ -1,24 +1,9 @@
-.custom-list {
-    padding: 16px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.custom-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.custom-list__item {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-.custom-list__title {
-    font-weight: bold;
-}
-
-.custom-list__description {
-    font-size: 14px;
-    color: #666;
-}
+.lista ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .lista li {
+    margin-bottom: 5px;
+  }
+  
