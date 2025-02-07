@@ -210,7 +210,7 @@
     ]
   },
   {
-    "id": "lista",
+    "id": "lista-custom",
     "fields": [
       {
         "component": "multiselect",

@@ -130,8 +130,8 @@
           }
         },
         {
-          "title": "Lista",
-          "id": "lista",
+          "title": "Lista Custom",
+          "id": "lista-custom",
           "plugins": {
             "xwalk": {
               "page": {
@@ -139,7 +139,7 @@
                 "template": {
                   "name": "Lista",
                   "model": "lista",
-                  "noticias": "Novedades"
+                  "author": "Novedades"
                 }
               }
             }
