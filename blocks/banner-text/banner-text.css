@@ -14,3 +14,8 @@
   .banner-text-content {
     margin: 0;
   }
+
+  .banner-image img {
+    max-width: 50px; /* Ajusta el tamaño de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
