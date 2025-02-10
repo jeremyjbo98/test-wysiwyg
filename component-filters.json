@@ -15,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "banner-text"
     ]
   },
   {
@@ -36,7 +37,8 @@
       "columns",
       "quote",
       "fragment",
-      "carrusel-custom"
+      "carrusel-custom",
+      "banner-text"
     ]
   },
   {
@@ -59,9 +61,5 @@
     "components": [
       "slide"
     ]
-  },
-  {
-    "id": "banner-text",
-    "components": []
   }
 ]
