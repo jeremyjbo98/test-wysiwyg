@@ -1,6 +1,5 @@
 // Decorate cochez-carrusel block
 export default function decorate(block) {
-    console.log('Decorating cochez-carrusel block', block);
     block.className = 'carrusel-cochez-block';
     [...block.children].forEach((row, index) => {
         row.className = 'carrusel-cochez-item';
