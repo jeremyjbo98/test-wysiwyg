@@ -16,11 +16,16 @@ export default function decorate(block) {
         });
         bullets.append(bullet);
     });
+    bullets.children[0].classList.add('active-bullet');
     block.insertAdjacentElement('afterend', bullets);
     function doSlide(index) {
         const widthSlide = block.clientWidth;
         [...block.children].forEach((row) => {
             row.style.transform = `translateX(-${index * widthSlide}px)`;
-        });    
+        });   
+        [...bullets.children].forEach((bullet) => {
+            bullet.classList.remove('active-bullet');
+        });
+        bullets.children[index].classList.add('active-bullet'); 
     }
 }
