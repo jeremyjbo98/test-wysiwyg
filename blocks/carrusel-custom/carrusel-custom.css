@@ -30,4 +30,9 @@
     border-radius: 50%;
     background-color: red;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.active-bullet{
+    width: 30px;
+    border-radius: 16px;
 }
