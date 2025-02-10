@@ -238,10 +238,11 @@
     "id": "banner-text",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
+        "component": "richtext",
         "name": "text",
-        "label": "Text"
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   }
