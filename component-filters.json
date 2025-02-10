@@ -61,14 +61,7 @@
     ]
   },
   {
-    "id": "pre-header",
-    "components": [
-      "location",
-      "coupon",
-      "trackOrder",
-      "points",
-      "services",
-      "business"
-    ]
+    "id": "banner-text",
+    "components": []
   }
 ]

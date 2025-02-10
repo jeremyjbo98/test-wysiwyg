@@ -1,0 +1,16 @@
+/* style.css */
+.banner-text {
+    background-color: #ffee00; /* Fondo amarillo */
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Asegura que esté debajo del header */
+  }
+  
+  .banner-text-content {
+    margin: 0;
+  }
