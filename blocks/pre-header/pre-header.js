@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOMContentLoaded ejecutado");
+
     const preHeader = document.createElement("div");
     preHeader.classList.add("pre-header");
-
-    // Aquí reemplazamos el innerHTML manualmente
+    
     preHeader.innerHTML = `
         <a href="#"><i class="fas fa-map-marker-alt"></i> Cochez Vía España <span class="sucursales">Sucursales</span></a>
         <a href="#"><i class="fas fa-truck"></i> Cupón de $20 por compras de $200</a>
@@ -12,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href="#" class="business">Empresas</a>
     `;
 
-    console.log("Contenido de preHeader:", preHeader.innerHTML);
-    
+    console.log("Pre-header antes de insertarlo:", preHeader);
+
     document.body.prepend(preHeader);
+
+    console.log("Pre-header después de insertarlo:", document.querySelector(".pre-header"));
 });
