@@ -18,6 +18,9 @@ export default function decorate(block) {
     });
     block.insertAdjacentElement('afterend', bullets);
     function doSlide(index) {
-        console.log('doSlide', index);
+        const widthSlide = block.clientWidth;
+        [...block.children].forEach((row) => {
+            row.style.transform = `translateX(-${index * widthSlide}px)`;
+        });    
     }
 }
