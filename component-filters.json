@@ -62,8 +62,6 @@
   },
   {
     "id": "banner-text",
-    "components": [
-      "text"
-    ]
+    "components": []
   }
 ]
