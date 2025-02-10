@@ -4,34 +4,20 @@ export default function decorate(block) {
     const preHeader = document.createElement('div');
     preHeader.className = 'pre-header';
   
-    // Obtener los datos del bloque
-    const location = block.querySelector(':scope > div:nth-child(1)')?.textContent.trim();
-    const coupon = block.querySelector(':scope > div:nth-child(2)')?.textContent.trim();
-    const trackOrder = block.querySelector(':scope > div:nth-child(3)')?.textContent.trim();
-    const points = block.querySelector(':scope > div:nth-child(4)')?.textContent.trim();
-    const services = block.querySelector(':scope > div:nth-child(5)')?.textContent.trim();
-    const business = block.querySelector(':scope > div:nth-child(6)')?.textContent.trim();
-  
-    // Crear los elementos del pre-header
-    const createLink = (text, href = '#') => {
-      const link = document.createElement('a');
-      link.href = href;
-      link.textContent = text;
-      return link;
-    };
-  
+    // Crear el contenido del pre-header (contenido quemado)
     const leftSection = document.createElement('div');
-    leftSection.appendChild(createLink(location));
-    leftSection.appendChild(createLink(coupon));
-    leftSection.appendChild(createLink(trackOrder));
+    leftSection.innerHTML = `
+      <a href="#">Ubicación</a>
+      <a href="#">Cupón</a>
+      <a href="#">Rastrear Orden</a>
+    `;
   
     const rightSection = document.createElement('div');
-    rightSection.appendChild(createLink(points));
-    rightSection.appendChild(createLink(services));
-  
-    const businessLink = createLink(business);
-    businessLink.className = 'business';
-    rightSection.appendChild(businessLink);
+    rightSection.innerHTML = `
+      <a href="#">Puntos</a>
+      <a href="#">Servicios</a>
+      <a href="#" class="business">Empresas</a>
+    `;
   
     // Agregar las secciones al pre-header
     preHeader.appendChild(leftSection);
