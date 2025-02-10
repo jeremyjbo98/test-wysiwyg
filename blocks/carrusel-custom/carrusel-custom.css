@@ -1,0 +1,8 @@
+.carrusel-custom-block {
+  display: flex;
+  overflow: scroll;
+}
+.carrusel-custom-item{
+    flex: 0 0 100%;
+    
+}
