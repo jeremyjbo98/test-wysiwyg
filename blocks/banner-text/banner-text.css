@@ -1,10 +1,10 @@
 /* style.css */
 .banner-text {
-    background-color: #ffee00; /* Fondo amarillo */
-    color: black;
+    background-color: #313130; /* Fondo amarillo */
+    color: white;
     text-align: center;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 0px;
+    font-size: 20px;
     font-weight: bold;
     width: 100%;
     position: relative;
