@@ -1,4 +1,9 @@
 /* style.css */
+
+.banner-text-wrapper
+{
+   margin-top: 20px;
+}
 .banner-text {
     background-color: #313130; /* Fondo amarillo */
     color: white;
@@ -9,6 +14,8 @@
     width: 100%;
     position: relative;
     z-index: 1; /* Asegura que esté debajo del header */
+    display: flex;
+    justify-content: center;
   }
   
   .banner-text-content {
@@ -17,5 +24,6 @@
 
   .banner-image img {
     max-width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 32px;
     margin-right: 10px; /* Espacio entre la imagen y el texto */
   }
