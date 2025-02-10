@@ -4,5 +4,19 @@
 }
 .carrusel-custom-item{
     flex: 0 0 100%;
-    
+
+}
+.carrusel-custom-bullets{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    gap: 10px;
+}
+.carrusel-custom-bullet{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
 }

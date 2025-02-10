@@ -5,4 +5,19 @@ export default function decorate(block) {
     [...block.children].forEach((row, index) => {
         row.className = 'carrusel-custom-item';
     });
+    const bullets = document.createElement('div');
+    bullets.className = 'carrusel-custom-bullets';
+    [...block.children].forEach((row, index) => {
+        const bullet = document.createElement('div');
+        bullet.className = 'carrusel-custom-bullet';
+        bullet.setAttribute('data-index', index);
+        bullet.addEventListener('click', () => {
+            doSlide(index);
+        });
+        bullets.append(bullet);
+    });
+
+    function doSlide(index) {
+        console.log('doSlide', index);
+    }
 }
