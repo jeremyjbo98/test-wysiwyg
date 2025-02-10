@@ -23,7 +23,7 @@
     margin: 0;
   }
 
-  .banner-image img {
+  .banner-image {
     max-width: 50px; /* Ajusta el tamaño de la imagen */
     height: 32px;
     margin-right: 10px; /* Espacio entre la imagen y el texto */
