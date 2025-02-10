@@ -1,15 +1,15 @@
-// Decorate custom-carrusel block
+// Decorate cochez-carrusel block
 export default function decorate(block) {
-    console.log('Decorating custom-carrusel block', block);
-    block.className = 'carrusel-custom-block';
+    console.log('Decorating cochez-carrusel block', block);
+    block.className = 'carrusel-cochez-block';
     [...block.children].forEach((row, index) => {
-        row.className = 'carrusel-custom-item';
+        row.className = 'carrusel-cochez-item';
     });
     const bullets = document.createElement('div');
-    bullets.className = 'carrusel-custom-bullets';
+    bullets.className = 'carrusel-cochez-bullets';
     [...block.children].forEach((row, index) => {
         const bullet = document.createElement('div');
-        bullet.className = 'carrusel-custom-bullet';
+        bullet.className = 'carrusel-cochez-bullet';
         bullet.setAttribute('data-index', index);
         bullet.addEventListener('click', () => {
             doSlide(index);

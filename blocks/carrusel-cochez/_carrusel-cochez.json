@@ -1,15 +1,15 @@
 {
     "definitions": [
         {
-            "title": "Carrusel-custom",
-            "id": "carrusel-custom",
+            "title": "Carrusel-cochez",
+            "id": "carrusel-cochez",
             "plugins": {
                 "xwalk": {
                     "page": {
                         "resourceType": "core/franklin/components/block/v1/block",
                         "template": {
-                            "name": "Carrusel-custom",
-                            "filter": "carrusel-custom"
+                            "name": "Carrusel-cochez",
+                            "filter": "carrusel-cochez"
                         }
                     }
                 }
@@ -47,7 +47,7 @@
     ],
     "filters": [
         {
-            "id": "carrusel-custom",
+            "id": "carrusel-cochez",
             "components": [
                 "slide"
             ]

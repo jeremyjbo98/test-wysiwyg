@@ -210,7 +210,7 @@
     ]
   },
   {
-    "id": "carrusel-custom",
+    "id": "carrusel-cochez",
     "fields": [
       {
         "component": "text",

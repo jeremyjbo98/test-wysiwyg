@@ -36,7 +36,7 @@
       "columns",
       "quote",
       "fragment",
-      "carrusel-custom"
+      "carrusel-cochez"
     ]
   },
   {
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "id": "carrusel-custom",
+    "id": "carrusel-cochez",
     "components": [
       "slide"
     ]
