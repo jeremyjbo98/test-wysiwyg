@@ -2,8 +2,9 @@
 
 .banner-text-wrapper
 {
-   margin-top: 20px;
+   margin-top: 20px !important;
 }
+
 .banner-text {
     background-color: #313130; /* Fondo amarillo */
     color: white;
