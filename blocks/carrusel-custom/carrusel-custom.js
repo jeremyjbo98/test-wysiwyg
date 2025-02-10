@@ -16,7 +16,7 @@ export default function decorate(block) {
         });
         bullets.append(bullet);
     });
-
+    block.append(bullets);
     function doSlide(index) {
         console.log('doSlide', index);
     }
