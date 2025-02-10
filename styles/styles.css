@@ -210,6 +210,16 @@ button.secondary {
   color: var(--text-color);
 }
 
+a.button.tertiary,
+button.tertiary {
+  background-color: unset;
+  border: 2px solid white;
+  color: white;
+  width: 170px;
+  font-size: 26px;
+  padding: 0;
+}
+
 main img {
   max-width: 100%;
   width: auto;
