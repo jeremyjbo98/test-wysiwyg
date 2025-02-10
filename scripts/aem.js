@@ -434,6 +434,13 @@ function decorateButtons(element) {
           a.className = 'button secondary';
           twoup.classList.add('button-container');
         }
+        if (
+          up.childNodes.length === 1
+          && up.tagName === 'P'
+        ) {
+          a.className = 'button tertiary';
+          up.classList.add('button-container');
+        }
       }
     }
   });
