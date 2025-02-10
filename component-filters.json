@@ -37,8 +37,8 @@
       "quote",
       "fragment",
       "carrusel-custom"
-     ]
-  },  
+    ]
+  },
   {
     "id": "columns",
     "components": [
@@ -58,6 +58,17 @@
     "id": "carrusel-custom",
     "components": [
       "slide"
+    ]
+  },
+  {
+    "id": "pre-header",
+    "components": [
+      "location",
+      "coupon",
+      "trackOrder",
+      "points",
+      "services",
+      "business"
     ]
   }
 ]
