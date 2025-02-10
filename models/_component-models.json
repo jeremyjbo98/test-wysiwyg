@@ -16,5 +16,8 @@
   },
   {
     "...": "../blocks/*/_*.json#/models"
+  },
+  {
+    "...": "./_pre-header.json#/models"
   }
 ]
