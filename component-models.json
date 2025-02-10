@@ -238,10 +238,10 @@
     "id": "banner-text",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
+        "valueType": "string",
         "name": "text",
-        "label": "Text",
-        "valueType": "string"
+        "label": "Text"
       }
     ]
   }
