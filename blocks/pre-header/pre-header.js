@@ -1,9 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     const preHeader = document.createElement("div");
     preHeader.classList.add("pre-header");
-    
-    // Probamos sin etiquetas HTML
-    preHeader.textContent = "Esto es una prueba sin innerHTML";
+
+    // Aquí reemplazamos el innerHTML manualmente
+    preHeader.innerHTML = `
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Cochez Vía España <span class="sucursales">Sucursales</span></a>
+        <a href="#"><i class="fas fa-truck"></i> Cupón de $20 por compras de $200</a>
+        <a href="#">Rastrear mi orden</a>
+        <a href="#">Consultar Puntos Gordos</a>
+        <a href="#">Servicios</a>
+        <a href="#" class="business">Empresas</a>
+    `;
+
+    console.log("Contenido de preHeader:", preHeader.innerHTML);
     
     document.body.prepend(preHeader);
 });
