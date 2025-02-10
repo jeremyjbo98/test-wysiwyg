@@ -1,0 +1,30 @@
+/* style.css */
+
+.banner-text-wrapper
+{
+   margin-top: 20px !important;
+}
+
+.banner-text {
+    background-color: #313130; /* Fondo amarillo */
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Asegura que esté debajo del header */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner-text-content {
+    margin: 0;
+  }
+
+  .banner-image {
+    max-width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 32px;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }

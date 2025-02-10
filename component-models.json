@@ -235,44 +235,22 @@
     ]
   },
   {
-    "id": "pre-header",
+    "id": "banner-text",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
         "valueType": "string",
-        "name": "location",
-        "label": "Ubicación"
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "coupon",
-        "label": "Cupón"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "trackOrder",
-        "label": "Rastrear Orden"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "points",
-        "label": "Puntos"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "services",
-        "label": "Servicios"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "business",
-        "label": "Empresas"
-      }
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }      
     ]
   }
 ]

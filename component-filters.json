@@ -15,7 +15,8 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "banner-text"
     ]
   },
   {
@@ -36,7 +37,8 @@
       "columns",
       "quote",
       "fragment",
-      "carrusel-cochez"
+      "carrusel-cochez",
+      "banner-text"
     ]
   },
   {
@@ -58,17 +60,6 @@
     "id": "carrusel-cochez",
     "components": [
       "slide"
-    ]
-  },
-  {
-    "id": "pre-header",
-    "components": [
-      "location",
-      "coupon",
-      "trackOrder",
-      "points",
-      "services",
-      "business"
     ]
   }
 ]
