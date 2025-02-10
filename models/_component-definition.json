@@ -35,15 +35,6 @@
           "...": "../blocks/*/_*.json#/definitions"
         }
       ]
-    },
-    {
-      "title": "Pre-header",
-      "id": "pre-header",
-      "components": [
-        {
-          "...": "./_pre-header.json#/definitions"
-        }
-      ]
-  }
+    }
   ]
 }
