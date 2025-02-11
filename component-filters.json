@@ -41,7 +41,9 @@
       "fragment",
       "carrusel-cochez",
       "banner-cochez",
-      "carrusel-cochez-categorias"
+      "carrusel-cochez-categorias",
+      "category-carousel",
+      "category-carousel-slide"
     ]
   },
   {
