@@ -17,6 +17,7 @@
     z-index: 1; /* Asegura que esté debajo del header */
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   .banner-cochez-content {
@@ -24,7 +25,7 @@
   }
 
   .banner-image {
-    max-width: 50px; /* Ajusta el tamaño de la imagen */
-    height: 32px;
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    height: 60px;
+    max-width: 100%;
+    margin-right: 20px;
   }
