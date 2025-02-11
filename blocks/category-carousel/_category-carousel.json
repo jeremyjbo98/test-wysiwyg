@@ -53,10 +53,11 @@
       "id": "category-carousel-slide",
       "fields": [
         {
-          "component": "image",
+          "component": "reference",
+          "valueType": "string",
           "name": "image",
           "label": "Image",
-          "valueType": "string"
+          "multi": false
         },
         {
           "component": "text",
