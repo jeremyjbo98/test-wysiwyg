@@ -8,7 +8,7 @@
     height: 3px;
     transition: all .3s;
 }
-.carrusel-cochez-categorias-block::-webkit-scrollbar:hover{
+.carrusel-cochez-categorias-block:hover .carrusel-cochez-categorias-block::-webkit-scrollbar{
     height: 5px;
 }
 .carrusel-cochez-categorias-block::-webkit-scrollbar-track{
