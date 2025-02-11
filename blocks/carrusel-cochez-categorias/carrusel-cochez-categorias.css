@@ -3,7 +3,10 @@
   overflow-x: auto;
 }	
 .carrusel-cochez-categorias-item{
-    flex: 0 0 8.333%;
+    flex: 0 0 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .carrusel-cochez-categorias-item-image{
     width: 100%;
