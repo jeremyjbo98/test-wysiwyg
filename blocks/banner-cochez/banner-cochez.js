@@ -5,9 +5,9 @@ export default function decorate(block) {
   const text = block.querySelector(':scope > div:nth-child(2)')?.textContent.trim();
   const imageDiv = block.querySelector(':scope > div:nth-child(1)');
 
-  // Crear el contenedor del banner-text
+  // Crear el contenedor del banner-cochez
   const bannerText = document.createElement('div');
-  bannerText.className = 'banner-text';
+  bannerText.className = 'banner-cochez';
 
   // Procesar la imagen si existe
   if (imageDiv) {
@@ -24,7 +24,7 @@ export default function decorate(block) {
   // Crear el contenido del banner
   const content = document.createElement('p');
   content.textContent = text || 'Bienvenido al renovado cochezycia.com | ¡Innovamos para ti!';
-  content.className = 'banner-text-content';
+  content.className = 'banner-cochez-content';
 
   // Agregar el contenido al contenedor
   bannerText.appendChild(content);

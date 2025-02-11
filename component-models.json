@@ -226,7 +226,7 @@
     ]
   },
   {
-    "id": "banner-text",
+    "id": "banner-cochez",
     "fields": [
       {
         "component": "reference",

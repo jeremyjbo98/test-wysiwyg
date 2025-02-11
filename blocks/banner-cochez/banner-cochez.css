@@ -1,11 +1,11 @@
 /* style.css */
 
-.banner-text-wrapper
+.banner-cochez-wrapper
 {
    margin-top: 20px !important;
 }
 
-.banner-text {
+.banner-cochez {
     background-color: #313130; /* Fondo amarillo */
     color: white;
     text-align: center;
@@ -17,14 +17,15 @@
     z-index: 1; /* Asegura que esté debajo del header */
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
-  .banner-text-content {
+  .banner-cochez-content {
     margin: 0;
   }
 
   .banner-image {
-    max-width: 50px; /* Ajusta el tamaño de la imagen */
-    height: 32px;
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    height: 60px;
+    max-width: 100%;
+    margin-right: 20px;
   }
