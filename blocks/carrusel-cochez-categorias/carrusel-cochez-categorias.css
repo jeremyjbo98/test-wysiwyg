@@ -1,6 +1,7 @@
 .carrusel-cochez-categorias-block {
   display: flex;
   overflow-x: auto;
+  gap: 10px;
 }	
 .carrusel-cochez-categorias-item{
     flex: 0 0 170px;
