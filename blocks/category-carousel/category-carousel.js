@@ -2,15 +2,20 @@ function showCategorySlide(block, direction) {
     const slidesWrapper = block.querySelector('.category-carousel-slides-container');
     const slidesList = block.querySelector('.category-carousel-slides');
     const slides = block.querySelectorAll('.category-carousel-slide');
+    const prevButton = block.querySelector('.category-prev');
+    const nextButton = block.querySelector('.category-next');
+
+    if (!slides.length) return;
+
     const totalSlides = slides.length;
-    const maxVisible = 10; // Número de elementos visibles
+    const maxVisible = Math.min(4, totalSlides); // Muestra hasta 4 slides o el total disponible
     let activeIndex = parseInt(block.dataset.activeIndex, 10) || 0;
 
-    const slideWidth = slides[0].offsetWidth + 16; // Incluyendo márgenes
+    const slideWidth = slides[0].offsetWidth + 16; // Incluyendo margen
 
     activeIndex += direction;
 
-    // Evita que el carrusel avance más allá del último elemento completamente visible
+    // Lógica para evitar moverse fuera de los límites
     const maxIndex = Math.max(0, totalSlides - maxVisible);
     activeIndex = Math.min(activeIndex, maxIndex);
     activeIndex = Math.max(0, activeIndex);
@@ -18,26 +23,36 @@ function showCategorySlide(block, direction) {
     block.dataset.activeIndex = activeIndex;
     const translateX = -activeIndex * slideWidth;
     slidesList.style.transform = `translateX(${translateX}px)`;
+
+    // Habilitar/deshabilitar botones según posición
+    prevButton.disabled = activeIndex === 0;
+    nextButton.disabled = activeIndex === maxIndex;
 }
 
 function bindCategoryEvents(block) {
     block.dataset.activeIndex = 0;
 
-    block.querySelector('.category-prev').addEventListener('click', () => showCategorySlide(block, -1));
-    block.querySelector('.category-next').addEventListener('click', () => showCategorySlide(block, 1));
+    const prevButton = block.querySelector('.category-prev');
+    const nextButton = block.querySelector('.category-next');
+
+    prevButton.addEventListener('click', () => showCategorySlide(block, -1));
+    nextButton.addEventListener('click', () => showCategorySlide(block, 1));
+
+    // Iniciar con prevButton deshabilitado
+    prevButton.disabled = true;
 }
 
 export default function decorate(block) {
     block.classList.add('category-carousel');
     block.dataset.activeIndex = 0;
 
-    // Crear el título
+    // Crear título
     const title = document.createElement('h2');
     title.classList.add('category-carousel-title');
     title.textContent = "Compra por categoría";
     block.prepend(title);
 
-
+    // Contenedor del carrusel
     const slidesWrapper = document.createElement('div');
     slidesWrapper.classList.add('category-carousel-slides-container');
 
@@ -49,7 +64,7 @@ export default function decorate(block) {
     slides.forEach(slide => {
         slide.classList.add('category-carousel-slide');
 
-        // Estructura para imagen y texto
+        // Contenedor de imagen y texto
         const wrapper = document.createElement('div');
         wrapper.classList.add('category-carousel-item');
 
@@ -73,6 +88,7 @@ export default function decorate(block) {
     slidesWrapper.append(slidesList);
     block.append(slidesWrapper);
 
+    // Botones de navegación
     const navigation = document.createElement('div');
     navigation.classList.add('category-carousel-navigation-buttons');
     navigation.innerHTML = `
@@ -82,9 +98,11 @@ export default function decorate(block) {
     block.append(navigation);
 
     setTimeout(() => {
-        const slideWidth = slides[0].offsetWidth;
-        slidesList.style.width = `${slideWidth * slides.length}px`;
-        slidesWrapper.style.width = `${slideWidth * maxVisible}px`;
+        if (slides.length > 0) {
+            const slideWidth = slides[0].offsetWidth;
+            slidesList.style.width = `${slideWidth * slides.length}px`;
+            slidesWrapper.style.width = `${slideWidth * Math.min(4, slides.length)}px`; // Máximo 4 visibles
+        }
     }, 100);
 
     bindCategoryEvents(block);
