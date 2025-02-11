@@ -1,47 +1,3 @@
-function showCategorySlide(block, direction) {
-    const slidesWrapper = block.querySelector('.category-carousel-slides-container');
-    const slidesList = block.querySelector('.category-carousel-slides');
-    const slides = block.querySelectorAll('.category-carousel-slide');
-    const prevButton = block.querySelector('.category-prev');
-    const nextButton = block.querySelector('.category-next');
-
-    if (!slides.length) return;
-
-    const totalSlides = slides.length;
-    const maxVisible = Math.min(4, totalSlides); // Muestra hasta 4 slides o el total disponible
-    let activeIndex = parseInt(block.dataset.activeIndex, 10) || 0;
-
-    const slideWidth = slides[0].offsetWidth + 16; // Incluyendo margen
-
-    activeIndex += direction;
-
-    // Lógica para evitar moverse fuera de los límites
-    const maxIndex = Math.max(0, totalSlides - maxVisible);
-    activeIndex = Math.min(activeIndex, maxIndex);
-    activeIndex = Math.max(0, activeIndex);
-
-    block.dataset.activeIndex = activeIndex;
-    const translateX = -activeIndex * slideWidth;
-    slidesList.style.transform = `translateX(${translateX}px)`;
-
-    // Habilitar/deshabilitar botones según posición
-    prevButton.disabled = activeIndex === 0;
-    nextButton.disabled = activeIndex === maxIndex;
-}
-
-function bindCategoryEvents(block) {
-    block.dataset.activeIndex = 0;
-
-    const prevButton = block.querySelector('.category-prev');
-    const nextButton = block.querySelector('.category-next');
-
-    prevButton.addEventListener('click', () => showCategorySlide(block, -1));
-    nextButton.addEventListener('click', () => showCategorySlide(block, 1));
-
-    // Iniciar con prevButton deshabilitado
-    prevButton.disabled = true;
-}
-
 export default function decorate(block) {
     block.classList.add('category-carousel');
     block.dataset.activeIndex = 0;
@@ -59,7 +15,12 @@ export default function decorate(block) {
     const slidesList = document.createElement('ul');
     slidesList.classList.add('category-carousel-slides');
 
-    const slides = [...block.querySelectorAll(':scope > div')];
+    // Obtener los divs, pero filtrar los vacíos
+    const slides = [...block.querySelectorAll(':scope > div')].filter(slide => {
+        const hasImage = slide.querySelector('img') !== null;
+        const hasText = slide.textContent.trim().length > 0;
+        return hasImage || hasText; // Solo mantener los que tienen imagen o texto
+    });
 
     slides.forEach(slide => {
         slide.classList.add('category-carousel-slide');
@@ -74,14 +35,16 @@ export default function decorate(block) {
             wrapper.appendChild(img);
         }
 
-        const text = document.createElement('p');
-        text.classList.add('category-carousel-text');
-        text.textContent = slide.textContent.trim();
+        const text = slide.textContent.trim();
+        if (text.length > 0) {
+            const textElement = document.createElement('p');
+            textElement.classList.add('category-carousel-text');
+            textElement.textContent = text;
+            wrapper.appendChild(textElement);
+        }
 
-        wrapper.appendChild(text);
         slide.innerHTML = '';
         slide.appendChild(wrapper);
-
         slidesList.append(slide);
     });
 
