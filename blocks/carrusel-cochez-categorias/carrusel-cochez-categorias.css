@@ -3,6 +3,18 @@
   overflow-x: auto;
   gap: 10px;
 }	
+/* Un scrollbar negro con fondo gris */
+.carrusel-cochez-categorias-block::-webkit-scrollbar {
+    height: 8px;
+}
+.carrusel-cochez-categorias-block::-webkit-scrollbar-track{
+    background-color: #cecac5;
+    border-radius: 4px;
+}
+.carrusel-cochez-categorias-block::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 4px;
+}
 .carrusel-cochez-categorias-item{
     flex: 0 0 170px;
     display: flex;
