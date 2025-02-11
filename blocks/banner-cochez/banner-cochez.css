@@ -1,11 +1,11 @@
 /* style.css */
 
-.banner-text-wrapper
+.banner-cochez-wrapper
 {
    margin-top: 20px !important;
 }
 
-.banner-text {
+.banner-cochez {
     background-color: #313130; /* Fondo amarillo */
     color: white;
     text-align: center;
@@ -19,7 +19,7 @@
     justify-content: center;
   }
   
-  .banner-text-content {
+  .banner-cochez-content {
     margin: 0;
   }
 
