@@ -128,7 +128,7 @@
               }
             }
           }
-        },      
+        },
         {
           "title": "Columns",
           "id": "columns",
@@ -262,6 +262,24 @@
                   "name": "Category Carousel",
                   "model": "category-carousel",
                   "filter": "category-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Category Carousel Slide",
+          "id": "category-carousel-slide",
+          "group": "Components",
+          "description": "A slide component for the category carousel.",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Category Carousel Slide",
+                  "model": "category-carousel-slide",
+                  "filter": "category-carousel-slide"
                 }
               }
             }
