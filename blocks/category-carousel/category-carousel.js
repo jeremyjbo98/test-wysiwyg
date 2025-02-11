@@ -1,3 +1,36 @@
+function showCategorySlide(block, direction) {
+    const slidesList = block.querySelector('.category-carousel-slides');
+    const slides = [...block.querySelectorAll('.category-carousel-slide')];
+    if (slides.length === 0) return; // Evitar errores si no hay slides
+
+    const totalSlides = slides.length;
+    const maxVisible = Math.min(4, totalSlides); // Número máximo de elementos visibles
+    let activeIndex = parseInt(block.dataset.activeIndex, 10) || 0;
+
+    const slideWidth = slides[0].offsetWidth + 16; // Incluir margen
+
+    activeIndex += direction;
+
+    // Evitar que avance más allá del último elemento visible
+    const maxIndex = Math.max(0, totalSlides - maxVisible);
+    activeIndex = Math.min(activeIndex, maxIndex);
+    activeIndex = Math.max(0, activeIndex);
+
+    block.dataset.activeIndex = activeIndex;
+    const translateX = -activeIndex * slideWidth;
+    slidesList.style.transform = `translateX(${translateX}px)`;
+}
+
+function bindCategoryEvents(block) {
+    block.dataset.activeIndex = 0;
+
+    const prevButton = block.querySelector('.category-prev');
+    const nextButton = block.querySelector('.category-next');
+
+    prevButton.addEventListener('click', () => showCategorySlide(block, -1));
+    nextButton.addEventListener('click', () => showCategorySlide(block, 1));
+}
+
 export default function decorate(block) {
     block.classList.add('category-carousel');
     block.dataset.activeIndex = 0;
@@ -15,7 +48,7 @@ export default function decorate(block) {
     const slidesList = document.createElement('ul');
     slidesList.classList.add('category-carousel-slides');
 
-    // Obtener los divs, pero filtrar los vacíos
+    // Obtener los divs y filtrar los vacíos
     const slides = [...block.querySelectorAll(':scope > div')].filter(slide => {
         const hasImage = slide.querySelector('img') !== null;
         const hasText = slide.textContent.trim().length > 0;
