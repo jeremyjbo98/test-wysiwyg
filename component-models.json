@@ -214,19 +214,6 @@
     ]
   },
   {
-    "id": "carrusel-cochez",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "slides",
-        "value": "",
-        "label": "Slides",
-        "className": "test-slide"
-      }
-    ]
-  },
-  {
     "id": "slide",
     "fields": [
       {
