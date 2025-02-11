@@ -10,5 +10,15 @@
 }
 .carrusel-cochez-categorias-item-image{
     width: 100%;
-    height: 112px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.carrusel-cochez-categorias-item-image img{
+    width: 131px;
+    height: 131px;
+    margin: 0 auto;
+}
+.carrusel-cochez-categorias-item-title{
+    text-align: center;
 }
