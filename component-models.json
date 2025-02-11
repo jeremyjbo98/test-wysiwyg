@@ -262,5 +262,35 @@
         "valueType": "string"
       }      
     ]
-  }
+  },
+  [
+    {
+      "id": "category-carousel",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "category-carousel-slide",
+      "fields": [
+        {
+          "component": "image",
+          "name": "image",
+          "label": "Image",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "text",
+          "label": "Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
 ]

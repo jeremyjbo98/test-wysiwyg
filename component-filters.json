@@ -69,5 +69,20 @@
     "components": [
       "slide-categorias"
     ]
-  }
+  },
+  [
+    {
+      "id": "category-carousel",
+      "components": [
+        "category-carousel-slide"
+      ]
+    },
+    {
+      "id": "category-carousel-slide",
+      "components": [
+        "image",
+        "text"
+      ]
+    }
+  ]
 ]
