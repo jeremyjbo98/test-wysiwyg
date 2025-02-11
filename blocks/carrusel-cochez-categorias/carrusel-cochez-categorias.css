@@ -19,8 +19,8 @@
     clip-path: circle(50%);
 }
 .carrusel-cochez-categorias-item-image img{
-    width: 131px;
-    height: 131px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
 }
 .carrusel-cochez-categorias-item-title{
