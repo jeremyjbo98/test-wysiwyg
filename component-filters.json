@@ -16,7 +16,9 @@
       "cards",
       "columns",
       "fragment",
-      "banner-text"
+      "banner-cochez",
+      "category-carousel",
+      "category-carousel-slide"
     ]
   },
   {
