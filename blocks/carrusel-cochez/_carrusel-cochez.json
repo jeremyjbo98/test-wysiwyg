@@ -1,56 +1,56 @@
 {
-    "definitions": [
-        {
-            "title": "Carrusel-cochez",
-            "id": "carrusel-cochez",
-            "plugins": {
-                "xwalk": {
-                    "page": {
-                        "resourceType": "core/franklin/components/block/v1/block",
-                        "template": {
-                            "name": "Carrusel-cochez",
-                            "filter": "carrusel-cochez"
-                        }
-                    }
-                }
+  "definitions": [
+    {
+      "title": "Carrusel-cochez",
+      "id": "carrusel-cochez",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Carrusel-cochez",
+              "filter": "carrusel-cochez"
             }
-        },
-        {
-            "title": "Slide",
-            "id": "slide",
-            "plugins": {
-                "xwalk": {
-                    "page": {
-                        "resourceType": "core/franklin/components/block/v1/block/item",
-                        "template": {
-                            "name": "Slide",
-                            "model": "slide"
-                        }
-                    }
-                }
+          }
+        }
+      }
+    },
+    {
+      "title": "Slide",
+      "id": "slide",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Slide",
+              "model": "slide"
             }
+          }
         }
-    ],
-    "models": [
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "slide",
+      "fields": [
         {
-            "id": "slide",
-            "fields": [
-                {
-                    "component": "reference",
-                    "valueType": "string",
-                    "name": "image",
-                    "label": "Image",
-                    "multi": false
-                }
-            ]
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
         }
-    ],
-    "filters": [
-        {
-            "id": "carrusel-cochez",
-            "components": [
-                "slide"
-            ]
-        }
-    ]
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "carrusel-cochez",
+      "components": [
+        "slide"
+      ]
+    }
+  ]
 }
